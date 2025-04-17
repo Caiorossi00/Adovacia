@@ -410,6 +410,10 @@ footer {
     margin-bottom: 40px;
   }
 
+  .hero-image img {
+    max-height: 800px;
+  }
+
   .services-grid,
   .testimonials-grid {
     grid-template-columns: 1fr;
