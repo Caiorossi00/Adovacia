@@ -1,0 +1,87 @@
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    background-color: var(--bg);
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 0;
+    transition: left 0.3s;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .hero-content,
+  .about-content,
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    padding-bottom: 0;
+  }
+
+  .hero-text {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .hero-image img {
+    height: 500px;
+  }
+
+  .services-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    display: flex;
+    padding: 8vh 5%;
+    margin: 0 auto;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    gap: 0;
+  }
+
+  .about p {
+    margin-bottom: 40px;
+  }
+
+  .cta-contact p {
+    font-size: 1rem;
+  }
+
+  .btn-contact {
+    padding: 14px 30px;
+    font-size: 1rem;
+  }
+
+  .channels-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    padding: 60px 0;
+  }
+
+  .channel-box {
+    padding: 20px 15px;
+  }
+
+  .about-description {
+    width: 90%;
+  }
+}

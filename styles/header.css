@@ -1,0 +1,43 @@
+header {
+  background-color: var(--bg);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.nav-links a:hover {
+  color: var(--gold-hover);
+}
+
+.menu-toggle {
+  display: none;
+  color: var(--text-light);
+  font-size: 24px;
+  cursor: pointer;
+}

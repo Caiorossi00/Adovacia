@@ -1,0 +1,35 @@
+.services {
+  background-color: #f0f0f0;
+}
+
+.services h2 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 5vh;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: #ffffff;
+  color: var(--text-light);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width: calc(33.333% - 20px);
+  min-height: 180px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card h3 {
+  color: var(--gold);
+}

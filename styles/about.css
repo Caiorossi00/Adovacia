@@ -1,0 +1,31 @@
+.about {
+  display: flex;
+  padding: 7% 5%;
+  margin: 0 auto;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.about h2 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.about-description {
+  margin-bottom: 40px;
+  width: 40%;
+}
+
+.stats-list {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-list strong {
+  font-size: 2em;
+  color: var(--gold);
+}
