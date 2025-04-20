@@ -84,4 +84,17 @@
   .about-description {
     width: 90%;
   }
+
+  .services h2 {
+    margin-bottom: 3vh;
+  }
+
+  .services-grid {
+    gap: 15px;
+  }
+
+  .service-card {
+    width: 100%;
+    height: fit-content;
+  }
 }
