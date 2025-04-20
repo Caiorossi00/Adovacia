@@ -187,7 +187,8 @@ nav {
 }
 
 .about-description {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  width: 40%;
 }
 
 .stats-list {
@@ -560,5 +561,9 @@ footer {
 
   .channel-box {
     padding: 20px 15px;
+  }
+
+  .about-description {
+    width: 90%;
   }
 }
