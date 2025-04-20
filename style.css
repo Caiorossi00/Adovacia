@@ -309,44 +309,122 @@ nav {
 /* Seção Contato */
 .contact {
   background-color: #f0f0f0;
-}
-.contact-content {
-  display: flex;
-  gap: 40px;
-  background-color: #f0f0f0;
+  text-align: center;
+  padding: 80px 0;
 }
 
-.contact-info {
-  flex: 1;
-}
-
-.contact-form {
-  flex: 1;
-}
-
-.form-group {
+.contact-text {
+  font-size: 2em;
+  font-weight: 500;
+  color: var(--gold);
   margin-bottom: 20px;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 500;
+.cta-contact {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.cta-contact p {
+  font-size: 1.2rem;
+  line-height: 1.5;
   color: var(--text-light);
 }
 
-.form-group input,
-.form-group textarea {
+.btn-contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  padding: 16px 35px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--gold);
+  color: var(--bg);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-contact:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: black;
+  color: white;
+}
+
+.fa-whatsapp {
+  font-size: 1.4rem;
+}
+
+.contact-channels {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: var(--bg);
-  color: var(--text-light);
+  margin-top: 50px;
 }
 
-.form-group textarea {
-  height: 150px;
+.contact-channels h3 {
+  color: var(--gold);
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.channel-box {
+  display: block;
+  background: white;
+  border-radius: 10px;
+  padding: 25px 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.channel-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.channel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.channel-box:nth-child(2) .channel-icon {
+  color: #e1306c;
+}
+
+.channel-box:last-child .channel-icon {
+  color: #000000;
+}
+
+.channel-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.channel-box h4 {
+  color: var(--text-light);
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.channel-link {
+  color: var(--text-light);
+  font-weight: 500;
 }
 
 /* Rodapé */
@@ -458,5 +536,26 @@ footer {
 
   .about p {
     margin-bottom: 40px;
+  }
+
+  .cta-contact p {
+    font-size: 1rem;
+  }
+
+  .btn-contact {
+    padding: 14px 30px;
+    font-size: 1rem;
+  }
+
+  .channels-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    padding: 60px 0;
+  }
+
+  .channel-box {
+    padding: 20px 15px;
   }
 }

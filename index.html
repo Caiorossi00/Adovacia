@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/d3fb1e03fb.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -209,46 +213,53 @@
 
     <section class="contact" id="contato">
       <div class="container">
-        <h2>Entre em Contato</h2>
-        <div class="contact-content">
-          <div class="contact-info">
-            <h3>Informações de Contato</h3>
+        <h2 class="contact-text">Contato</h2>
+        <div class="contact-wrapper">
+          <div class="cta-contact">
             <p>
-              <strong>Endereço:</strong> Av. Paulista, 1000, Conjunto 501, Bela
-              Vista, São Paulo - SP
+              Precisa de orientação jurídica? Entre em contato sem compromisso!
             </p>
-            <p><strong>Telefone:</strong> (11) 3456-7890</p>
-            <p><strong>Email:</strong> contato@Loremadvocacia.com.br</p>
-            <p>
-              <strong>Horário de Atendimento:</strong> Segunda a Sexta, das 9h
-              às 18h
-            </p>
+            <a href="https://wa.me/5511976930589" class="btn btn-contact">
+              <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+            </a>
           </div>
-          <div class="contact-form">
-            <h3>Envie uma Mensagem</h3>
-            <form>
-              <div class="form-group">
-                <label for="name">Nome Completo</label>
-                <input type="text" id="name" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" required />
-              </div>
-              <div class="form-group">
-                <label for="phone">Telefone</label>
-                <input type="tel" id="phone" />
-              </div>
-              <div class="form-group">
-                <label for="subject">Assunto</label>
-                <input type="text" id="subject" />
-              </div>
-              <div class="form-group">
-                <label for="message">Mensagem</label>
-                <textarea id="message" required></textarea>
-              </div>
-              <button type="submit" class="btn">Enviar Mensagem</button>
-            </form>
+
+          <div class="contact-channels">
+            <h3>Meus outros Canais</h3>
+
+            <div class="channels-grid">
+              <a href="tel:11976930589" class="channel-box channel-box-phone">
+                <div class="channel-content">
+                  <i class="fas fa-phone-alt channel-icon"></i>
+                  <h4>Telefone</h4>
+                  <span class="channel-link">(11) 97693-0589</span>
+                </div>
+              </a>
+
+              <a
+                href="https://instagram.com/adv.yarajustino"
+                target="_blank"
+                class="channel-box channel-box-insta"
+              >
+                <div class="channel-content">
+                  <i class="fab fa-instagram channel-icon"></i>
+                  <h4>Instagram</h4>
+                  <span class="channel-link">@adv.yarajustino</span>
+                </div>
+              </a>
+
+              <a
+                href="https://tiktok.com/@yarajustino.adv"
+                target="_blank"
+                class="channel-box channel-box-tiktok"
+              >
+                <div class="channel-content">
+                  <i class="fab fa-tiktok channel-icon"></i>
+                  <h4>TikTok</h4>
+                  <span class="channel-link">yarajustino.adv</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -280,7 +291,7 @@
         </div>
         <div class="footer-bottom">
           <p>
-            &copy; 2025 Lorem Advocacia. Todos os direitos reservados. OAB/SP
+            &copy; 2025 Yara Justino . Todos os direitos reservados. OAB/SP
             12345
           </p>
         </div>
