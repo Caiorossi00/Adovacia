@@ -1,10 +1,14 @@
 document.querySelector(".menu-toggle").addEventListener("click", function () {
-  document.querySelector(".nav-links").classList.toggle("active");
+  const nav = document.querySelector(".nav-links");
+  nav.classList.toggle("active");
+
+  this.textContent = nav.classList.contains("active") ? "✖" : "☰";
 });
 
 document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", function () {
     document.querySelector(".nav-links").classList.remove("active");
+    document.querySelector(".menu-toggle").textContent = "☰";
   });
 });
 
@@ -28,4 +32,14 @@ faqItems.forEach((item) => {
   item.querySelector(".faq-question").addEventListener("click", () => {
     item.classList.toggle("open");
   });
+});
+
+window.addEventListener("scroll", () => {
+  const nav = document.querySelector(".nav-links");
+  const toggle = document.querySelector(".menu-toggle");
+
+  if (nav.classList.contains("active")) {
+    nav.classList.remove("active");
+    toggle.textContent = "☰";
+  }
 });
